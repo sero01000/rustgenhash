@@ -160,6 +160,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Cache cargo & target directories
         uses: Swatinem/rust-cache@v2
+  
+      - name: Install libssl-dev on Linux
+        run: sudo apt-get update --yes && sudo apt-get install --yes libssl-dev && sudo apt-get install --yes pkg-config
+        if: contains(matrix.platform.name, 'linux')
 
       - name: Install musl-tools on Linux
         run: sudo apt-get update --yes && sudo apt-get install --yes musl-tools
