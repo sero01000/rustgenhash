@@ -224,9 +224,9 @@ jobs:
           echo running archive
           cd target/${{ matrix.platform.target }}/release
           if [[ "${{ matrix.platform.os }}" == "windows-latest" ]]; then
-            7z a ../../../${{ matrix.platform.name }} ${ CRATE_NAME }.exe
+            7z a ../../../${{ matrix.platform.name }} ${{ CRATE_NAME }}.exe
           else
-            tar czvf ../../../${{ matrix.platform.name }} ${ CRATE_NAME }
+            tar czvf ../../../${{ matrix.platform.name }} ${{ CRATE_NAME }}
           fi
           cd -
         if: |
