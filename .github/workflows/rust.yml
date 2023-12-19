@@ -5,7 +5,7 @@ on:
     types: [created]
 
 env:
-  CRATE_NAME: runiq_ahash
+  CRATE_NAME: ${GITHUB_REPOSITORY#*/}
   GITHUB_TOKEN: ${{ github.token }}
   RUST_BACKTRACE: 1
 
@@ -115,11 +115,11 @@ jobs:
           #   name: ${{ github.event.repository.name }}-i686-pc-windows-msvc-i686.zip
           #   skip_tests: true
           
-          # - os_name: macOS-x86_64
-          #   os: macos-12
-          #   target: x86_64-apple-darwin
-          #   bin: ${{ github.event.repository.name }}
-          #   name: ${{ github.event.repository.name }}-macOS-x86_64-apple-darwin.tar.gz
+          - os_name: macOS-x86_64
+            os: macos-12
+            target: x86_64-apple-darwin
+            bin: ${{ github.event.repository.name }}
+            name: ${{ github.event.repository.name }}-macOS-x86_64-apple-darwin.tar.gz
             
           - os_name: macOS-aarch64
             os: macos-12
