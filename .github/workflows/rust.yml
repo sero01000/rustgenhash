@@ -135,11 +135,11 @@ jobs:
             name: ${{ github.event.repository.name }}-Apple-aarch64-apple-ios.tar.gz
             skip_tests: true
 
-          - os_name: aarch64-linux-android
-            os: ubuntu-22.04
-            target: aarch64-linux-android
-            bin: ${{ github.event.repository.name }}
-            name: ${{ github.event.repository.name }}-aarch64-linux-android.tar.gz
+          # - os_name: aarch64-linux-android
+          #   os: ubuntu-22.04
+          #   target: aarch64-linux-android
+          #   bin: ${{ github.event.repository.name }}
+          #   name: ${{ github.event.repository.name }}-aarch64-linux-android.tar.gz
             
           # - os_name: Android-ARMv7a
           #   os: ubuntu-22.04
