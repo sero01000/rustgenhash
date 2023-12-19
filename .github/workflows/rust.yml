@@ -38,11 +38,11 @@ jobs:
           #   bin: ${{ github.event.repository.name }}
           #   name: ${{ github.event.repository.name }}-x86_64-unknown-linux-gnu.tar.gz
 
-          - os_name: Linux-aarch64
-            os: ubuntu-20.04
-            target: aarch64-unknown-linux-gnu
-            bin: ${{ github.event.repository.name }}
-            name: ${{ github.event.repository.name }}-aarch64-unknown-linux-gnu.tar.gz
+          # - os_name: Linux-aarch64
+          #   os: ubuntu-20.04
+          #   target: aarch64-unknown-linux-gnu
+          #   bin: ${{ github.event.repository.name }}
+          #   name: ${{ github.event.repository.name }}-aarch64-unknown-linux-gnu.tar.gz
             
           # - os_name: Linux-arm-musleabi
           #   os: ubuntu-20.04
