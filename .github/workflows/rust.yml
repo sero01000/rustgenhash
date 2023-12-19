@@ -5,7 +5,7 @@ on:
     types: [created]
 
 env:
-  CRATE_NAME: ${GITHUB_REPOSITORY#*/}
+  CRATE_NAME: rgh #${GITHUB_REPOSITORY#*/}
   GITHUB_TOKEN: ${{ github.token }}
   RUST_BACKTRACE: 1
 
